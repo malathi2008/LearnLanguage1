@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.student.learnlanguage.view.SelectLanguage">
+    <include
+        android:id="@+id/top"
+        layout="@layout/titlebar" />
+    <GridView
+        android:layout_below="@id/top"
+        android:layout_marginTop="10dp"
+        android:id="@+id/languages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b1ffffff"
+        android:numColumns="2"
+        android:orientation="vertical">
+    </GridView>
+</RelativeLayout>

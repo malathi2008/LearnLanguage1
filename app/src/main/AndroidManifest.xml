@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.learnlanguage">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".Session"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.Entrance" />
+        <activity android:name=".view.Login" />
+        <activity android:name=".view.ForgotPassword" />
+        <activity
+            android:name=".view.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".view.Beginner" />
+        <activity android:name=".view.Levels" />
+        <activity android:name=".view.Intermediate" />
+        <activity android:name=".view.Words" />
+        <activity android:name=".view.MyProfile" />
+        <activity android:name=".view.Quiz" />
+        <activity android:name=".view.Register" />
+        <activity android:name=".view.Result" />
+        <activity android:name=".view.Languages" />
+        <activity android:name=".view.ContactUs" />
+        <activity android:name=".view.Aboutus" />
+        <activity android:name=".view.Term" />
+        <activity android:name=".view.Lecture" />
+    </application>
+
+</manifest>

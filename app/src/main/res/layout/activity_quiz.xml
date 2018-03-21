@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.student.learnlanguage.view.Quiz">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/top"
+                layout="@layout/titlebar" />
+    <LinearLayout
+
+        android:id="@+id/text"
+        android:layout_above="@+id/movenext"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/text_que"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que 1. Choose the correct word order"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="2"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/ans_one"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"/>
+            <Button
+                android:id="@+id/ans_two"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/text_answer"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Answer"
+            />
+
+        <Button
+            android:id="@+id/text_submit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttontb"
+            android:text="Check Answer"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/multipal"
+        android:layout_above="@+id/movenext"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/multipal_que"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Que 1. Choose the correct word order"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/multipal_ans_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Why she did leave so early ?"
+                android:layout_marginTop="10dp"/>
+            <RadioButton
+                android:id="@+id/multipal_ans_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Why she did leave so early ?"
+                android:layout_marginTop="10dp"/>
+            <RadioButton
+                android:id="@+id/multipal_ans_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Why she did leave so early ?"
+                android:layout_marginTop="10dp"/>
+            <RadioButton
+                android:id="@+id/multipal_ans_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Why she did leave so early ?"
+                android:layout_marginTop="10dp"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/multipal_submit"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttontb"
+            android:text="Check Answer"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/image"
+        android:layout_above="@+id/movenext"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/que"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text=""/>
+        <TableLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2">
+                <ImageView
+                    android:onClick="ansone"
+                    android:layout_weight="1"
+                    android:id="@+id/imageone"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:onClick="anstwo"
+                    android:layout_weight="1"
+
+                    android:id="@+id/imagetwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:onClick="ansone"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:id="@+id/answerone"
+                    />
+
+                <TextView
+                    android:onClick="anstwo"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/answertwo"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:weightSum="2">
+                <ImageView
+                    android:onClick="ansthree"
+                    android:layout_weight="1"
+                    android:id="@+id/imagethree"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+                <ImageView
+                    android:onClick="ansfour"
+                    android:layout_weight="1"
+                    android:id="@+id/imagefour"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+                <TextView
+                    android:onClick="ansthree"
+                    android:id="@+id/answerthree"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    />
+
+                <TextView
+                    android:onClick="ansfour"
+                    android:id="@+id/answerfour"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+    <Button
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:id="@+id/movenext"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
